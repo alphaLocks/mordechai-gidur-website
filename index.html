@@ -32,32 +32,82 @@
                 </a>
             </div>
             
-            <!-- תפריט ניווט במרכז -->
+            <!-- תפריט ניווט במרכז - Mega Menu -->
             <nav aria-label="תפריט ראשי">
                 <ul class="nav-menu">
                     <li><a href="#home">ראשי</a></li>
-                    <li class="has-dropdown">
+                    <li class="has-mega-dropdown">
                         <a href="#services">שירותים <i class="fas fa-chevron-down"></i></a>
-                        <!-- מוכן לתפריט נפתח בעתיד -->
-                        <ul class="dropdown-menu">
-                            <li><a href="#">גידור איסכורית</a></li>
-                            <li><a href="#">גדר פאנל קשיחה</a></li>
-                            <li><a href="#">רשת זמנית</a></li>
-                            <li><a href="#">שערים ומחסומים</a></li>
-                            <li><a href="#">מעברים בטוחים</a></li>
-                        </ul>
+                        <div class="mega-menu">
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-fence"></i> פתרונות גידור</h4>
+                                <ul>
+                                    <li><a href="#">גידור איסכורית</a></li>
+                                    <li><a href="#">גדר פאנל קשיחה</a></li>
+                                    <li><a href="#">רשת זמנית (Mobile Fence)</a></li>
+                                    <li><a href="#">שערים ומחסומים</a></li>
+                                    <li><a href="#">מעברים בטוחים (מנהרות)</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-plus-circle"></i> מוצרים משלימים</h4>
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-tree"></i> הגנה על עצים</a></li>
+                                    <li><a href="#"><i class="fas fa-users"></i> מחסומי אירועים</a></li>
+                                    <li><a href="#"><i class="fas fa-paint-brush"></i> יוטה ומיתוג גדרות</a></li>
+                                    <li><a href="#"><i class="fas fa-cube"></i> בטונדות</a></li>
+                                    <li><a href="#"><i class="fas fa-sign"></i> שילוט בטיחות</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
-                    <li class="has-dropdown">
+                    <li class="has-mega-dropdown">
                         <a href="#areas">אזורי שירות <i class="fas fa-chevron-down"></i></a>
-                        <!-- מוכן לתפריט נפתח בעתיד -->
-                        <ul class="dropdown-menu">
-                            <li><a href="#">גידור בתל אביב</a></li>
-                            <li><a href="#">גידור בירושלים</a></li>
-                            <li><a href="#">גידור בחיפה</a></li>
-                            <li><a href="#">גידור בבאר שבע</a></li>
-                        </ul>
+                        <div class="mega-menu mega-menu-areas">
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-map-marker-alt"></i> מרכז הארץ</h4>
+                                <ul>
+                                    <li><a href="#">תל אביב - יפו</a></li>
+                                    <li><a href="#">רמת גן / גבעתיים</a></li>
+                                    <li><a href="#">בני ברק</a></li>
+                                    <li><a href="#">ראשון לציון</a></li>
+                                    <li><a href="#">פתח תקווה</a></li>
+                                    <li><a href="#">חולון / בת ים</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-map-marker-alt"></i> השרון</h4>
+                                <ul>
+                                    <li><a href="#">נתניה</a></li>
+                                    <li><a href="#">הרצליה</a></li>
+                                    <li><a href="#">כפר סבא / רעננה</a></li>
+                                    <li><a href="#">הוד השרון</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-map-marker-alt"></i> שפלה ודרום</h4>
+                                <ul>
+                                    <li><a href="#">רחובות / נס ציונה</a></li>
+                                    <li><a href="#">מודיעין</a></li>
+                                    <li><a href="#">אשדוד / אשקלון</a></li>
+                                    <li><a href="#">באר שבע</a></li>
+                                    <li><a href="#">קרית גת</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-map-marker-alt"></i> ירושלים וצפון</h4>
+                                <ul>
+                                    <li><a href="#">ירושלים</a></li>
+                                    <li><a href="#">בית שמש</a></li>
+                                    <li><a href="#">חיפה</a></li>
+                                    <li><a href="#">חדרה / חריש</a></li>
+                                    <li><a href="#">עפולה</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
-                    <li><a href="#about">למה אנחנו</a></li>
+                    <li><a href="#projects">פרויקטים</a></li>
+                    <li><a href="#about">אודות</a></li>
                     <li><a href="#contact" class="btn-nav">צור קשר</a></li>
                 </ul>
             </nav>
@@ -115,6 +165,49 @@
                         <i class="fas fa-clock"></i>
                         <span>התקנה תוך 24 שעות</span>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS COUNTER - מונה דינמי -->
+        <section class="stats-counter">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-plus">+</div>
+                        <div class="stat-label">פרויקטים בוצעו</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50000">0</div>
+                        <div class="stat-plus">+</div>
+                        <div class="stat-label">מטר גדר הותקנו</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-plus">%</div>
+                        <div class="stat-label">עמידה בזמנים</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-plus">+</div>
+                        <div class="stat-label">שנות ניסיון</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENTS LOGOS - לוגואים של לקוחות -->
+        <section class="clients-logos">
+            <div class="container">
+                <p class="clients-title">עבדנו עם חברות הבניה המובילות בישראל</p>
+                <div class="logos-slider">
+                    <div class="logo-item"><span>דניה סיבוס</span></div>
+                    <div class="logo-item"><span>אלקטרה בניה</span></div>
+                    <div class="logo-item"><span>תדהר</span></div>
+                    <div class="logo-item"><span>שיכון ובינוי</span></div>
+                    <div class="logo-item"><span>אפריקה ישראל</span></div>
+                    <div class="logo-item"><span>עיריית תל אביב</span></div>
                 </div>
             </div>
         </section>
@@ -180,6 +273,66 @@
                         <div class="service-text">
                             <h3>מעברים בטוחים (מנהרות)</h3>
                             <p>שרוולי הגנה ומנהרות להולכי רגל. קונסטרוקציה יציבה המגנה על העוברים ושבים ומאפשרת שגרת חיים בטוחה בצמוד לאתר.</p>
+                            <a href="#" class="btn btn-outline">קרא עוד</a>
+                        </div>
+                    </article>
+
+                    <!-- כרטיסיית שירות 6: הגנה על עצים -->
+                    <article class="service-card">
+                        <div class="service-img service-img-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>גידור והגנה על עצים</h3>
+                            <p>גידור מיוחד לעצים בוגרים באתרי בניה לפי הנחיות פקיד היערות. מניעת קנסות ועמידה בדרישות היתר הבניה.</p>
+                            <a href="#" class="btn btn-outline">קרא עוד</a>
+                        </div>
+                    </article>
+
+                    <!-- כרטיסיית שירות 7: מחסומי אירועים -->
+                    <article class="service-card">
+                        <div class="service-img service-img-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>מחסומי לחץ ואירועים</h3>
+                            <p>מחסומים לשליטה בקהל באירועים, הופעות, מרתונים ואירועי עירייה. פתרון מקצועי לכל סוגי האירועים.</p>
+                            <a href="#" class="btn btn-outline">קרא עוד</a>
+                        </div>
+                    </article>
+
+                    <!-- כרטיסיית שירות 8: יוטה ומיתוג -->
+                    <article class="service-card">
+                        <div class="service-img service-img-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>חיפוי יוטה ומיתוג גדרות</h3>
+                            <p>רשת צל (יוטה) להסתרה והצללה, והדפסת לוגו ומיתוג על הגדר. שדרגו את המראה המקצועי של האתר שלכם.</p>
+                            <a href="#" class="btn btn-outline">קרא עוד</a>
+                        </div>
+                    </article>
+
+                    <!-- כרטיסיית שירות 9: בטונדות -->
+                    <article class="service-card">
+                        <div class="service-img service-img-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>קוביות בטון (בטונדות)</h3>
+                            <p>בסיסי בטון לעיגון גדרות, חסימת כבישים ותיחום אזורים באתרי תשתית. פתרון יציב וחזק במיוחד.</p>
+                            <a href="#" class="btn btn-outline">קרא עוד</a>
+                        </div>
+                    </article>
+
+                    <!-- כרטיסיית שירות 10: שילוט בטיחות -->
+                    <article class="service-card">
+                        <div class="service-img service-img-icon">
+                            <i class="fas fa-sign"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>שילוט בטיחות לאתרי בניה</h3>
+                            <p>שילוט מחייב לפי חוק: "סכנה כאן בונים", "חובה לחבוש קסדה" ועוד. קבלו חבילת גדר + שילוט חוקי במחיר משתלם.</p>
                             <a href="#" class="btn btn-outline">קרא עוד</a>
                         </div>
                     </article>
@@ -267,6 +420,60 @@
             </div>
         </section>
 
+        <!-- FAQ - שאלות ותשובות עם Schema -->
+        <section id="faq" class="faq-section section-padding">
+            <div class="container">
+                <h2 class="section-title">שאלות נפוצות</h2>
+                <div class="faq-grid" itemscope itemtype="https://schema.org/FAQPage">
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false">
+                            <span itemprop="name">האם צריך היתר לגדר באתר בניה?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">כן, גידור אתר בניה הוא חלק מדרישות היתר הבניה. על פי תקנות הבטיחות בעבודה, כל אתר בניה חייב להיות מגודר בגדר בגובה מינימלי של 1.80 מטר, עם שילוט אזהרה מתאים. אנחנו דואגים שהגדר תעמוד בכל התקנים.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false">
+                            <span itemprop="name">כמה מהר אפשר להתחיל בהתקנת הגדר?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">אנחנו מציעים שירות מהיר במיוחד - ברוב המקרים נוכל להתחיל בהתקנה תוך 24-48 שעות מרגע אישור ההזמנה. במקרים דחופים, אפשר גם באותו היום. התקשרו ונתאם.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false">
+                            <span itemprop="name">האם הגדר עמידה לרוחות חזקות?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">בהחלט! אנחנו משתמשים בשיטות עיגון מחוזקות עם בטונדות כבדות או יתדות קרקע עמוקים. הגדרות שלנו מתוכננות לעמוד ברוחות חזקות ובתנאי מזג אוויר קיצוניים. בנוסף, אנחנו מבצעים בדיקות תקופתיות.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false">
+                            <span itemprop="name">מה כולל המחיר? יש עלויות נסתרות?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">המחיר שאנחנו מציעים כולל הכל: אספקת הגדר, הובלה, התקנה מקצועית, ובסיום העבודה - פירוק ופינוי. אין עלויות נסתרות. תקבלו הצעת מחיר מפורטת מראש.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false">
+                            <span itemprop="name">האם יש לכם ביטוח קבלני?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">כן, אנחנו מחזיקים בביטוח קבלני מקיף הכולל ביטוח צד ג' וביטוח עבודות קבלניות. נשמח לשלוח לכם העתק של תעודת הביטוח לפני תחילת העבודה - שקט נפשי מלא למנהל הפרויקט.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- 7. CONTACT FORM + MAP - טופס יצירת קשר -->
         <section id="contact" class="contact section-padding">
             <div class="container">
@@ -323,11 +530,20 @@
                                 <label for="service">סוג השירות</label>
                                 <select id="service" name="service">
                                     <option value="">בחר סוג שירות</option>
-                                    <option value="גידור איסכורית">גידור איסכורית</option>
-                                    <option value="גדר פאנל">גדר פאנל קשיחה</option>
-                                    <option value="רשת זמנית">רשת זמנית (Mobile Fence)</option>
-                                    <option value="שערים">שערים ומחסומים</option>
-                                    <option value="מעברים בטוחים">מעברים בטוחים (מנהרות)</option>
+                                    <optgroup label="פתרונות גידור">
+                                        <option value="גידור איסכורית">גידור איסכורית</option>
+                                        <option value="גדר פאנל">גדר פאנל קשיחה</option>
+                                        <option value="רשת זמנית">רשת זמנית (Mobile Fence)</option>
+                                        <option value="שערים">שערים ומחסומים</option>
+                                        <option value="מעברים בטוחים">מעברים בטוחים (מנהרות)</option>
+                                    </optgroup>
+                                    <optgroup label="מוצרים משלימים">
+                                        <option value="הגנה על עצים">גידור והגנה על עצים</option>
+                                        <option value="מחסומי אירועים">מחסומי לחץ ואירועים</option>
+                                        <option value="יוטה ומיתוג">חיפוי יוטה ומיתוג</option>
+                                        <option value="בטונדות">קוביות בטון (בטונדות)</option>
+                                        <option value="שילוט בטיחות">שילוט בטיחות</option>
+                                    </optgroup>
                                     <option value="אחר">אחר</option>
                                 </select>
                             </div>
@@ -356,30 +572,33 @@
                         <p><i class="fas fa-phone"></i> <a href="tel:0507575570">050-757-5570</a></p>
                         <p><i class="fas fa-envelope"></i> <a href="mailto:m0507575570@gmail.com">m0507575570@gmail.com</a></p>
                     </div>
+                    <div class="footer-social">
+                        <a href="https://wa.me/972507575570" target="_blank" aria-label="וואטסאפ"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="פייסבוק"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
 
-                <!-- עמודה 2: שירותים -->
+                <!-- עמודה 2: פתרונות גידור -->
                 <div class="footer-column">
-                    <h4>השירותים שלנו</h4>
+                    <h4>פתרונות גידור</h4>
                     <ul class="footer-links">
                         <li><a href="#">גידור איסכורית</a></li>
                         <li><a href="#">גדר פאנל קשיחה</a></li>
-                        <li><a href="#">רשת זמנית (Mobile Fence)</a></li>
+                        <li><a href="#">רשת זמנית (Mobile)</a></li>
                         <li><a href="#">שערים ומחסומים</a></li>
-                        <li><a href="#">מעברים בטוחים (מנהרות)</a></li>
+                        <li><a href="#">מעברים בטוחים</a></li>
                     </ul>
                 </div>
 
-                <!-- עמודה 3: אזורי שירות -->
+                <!-- עמודה 3: מוצרים משלימים -->
                 <div class="footer-column">
-                    <h4>אזורי שירות</h4>
+                    <h4>מוצרים משלימים</h4>
                     <ul class="footer-links">
-                        <li><a href="#">גידור אתרי בניה בתל אביב</a></li>
-                        <li><a href="#">גידור אתרי בניה בירושלים</a></li>
-                        <li><a href="#">גידור אתרי בניה בחיפה</a></li>
-                        <li><a href="#">גידור אתרי בניה בבאר שבע</a></li>
-                        <li><a href="#">גידור אתרי בניה בראשון לציון</a></li>
-                        <li><a href="#">גידור אתרי בניה בפתח תקווה</a></li>
+                        <li><a href="#">הגנה על עצים</a></li>
+                        <li><a href="#">מחסומי אירועים</a></li>
+                        <li><a href="#">יוטה ומיתוג</a></li>
+                        <li><a href="#">בטונדות</a></li>
+                        <li><a href="#">שילוט בטיחות</a></li>
                     </ul>
                 </div>
 
@@ -389,13 +608,61 @@
                     <ul class="footer-links">
                         <li><a href="#home">דף הבית</a></li>
                         <li><a href="#services">השירותים שלנו</a></li>
+                        <li><a href="#faq">שאלות ותשובות</a></li>
                         <li><a href="#about">למה לבחור בנו</a></li>
                         <li><a href="#contact">צור קשר</a></li>
                     </ul>
-                    <div class="footer-social">
-                        <a href="https://wa.me/972507575570" target="_blank" aria-label="וואטסאפ"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" aria-label="פייסבוק"><i class="fab fa-facebook-f"></i></a>
-                    </div>
+                </div>
+            </div>
+
+            <!-- SEO LINKS CLOUD - ענן קישורים לערים -->
+            <div class="footer-seo-links">
+                <div class="seo-links-section">
+                    <h5>גידור אתרי בניה במרכז:</h5>
+                    <p>
+                        <a href="#">תל אביב</a> |
+                        <a href="#">רמת גן</a> |
+                        <a href="#">גבעתיים</a> |
+                        <a href="#">בני ברק</a> |
+                        <a href="#">ראשון לציון</a> |
+                        <a href="#">פתח תקווה</a> |
+                        <a href="#">חולון</a> |
+                        <a href="#">בת ים</a>
+                    </p>
+                </div>
+                <div class="seo-links-section">
+                    <h5>גידור אתרי בניה בשרון:</h5>
+                    <p>
+                        <a href="#">נתניה</a> |
+                        <a href="#">הרצליה</a> |
+                        <a href="#">רמת השרון</a> |
+                        <a href="#">כפר סבא</a> |
+                        <a href="#">רעננה</a> |
+                        <a href="#">הוד השרון</a>
+                    </p>
+                </div>
+                <div class="seo-links-section">
+                    <h5>גידור אתרי בניה בשפלה ודרום:</h5>
+                    <p>
+                        <a href="#">רחובות</a> |
+                        <a href="#">נס ציונה</a> |
+                        <a href="#">מודיעין</a> |
+                        <a href="#">אשדוד</a> |
+                        <a href="#">אשקלון</a> |
+                        <a href="#">באר שבע</a> |
+                        <a href="#">קרית גת</a>
+                    </p>
+                </div>
+                <div class="seo-links-section">
+                    <h5>גידור אתרי בניה בירושלים וצפון:</h5>
+                    <p>
+                        <a href="#">ירושלים</a> |
+                        <a href="#">בית שמש</a> |
+                        <a href="#">חיפה</a> |
+                        <a href="#">חדרה</a> |
+                        <a href="#">חריש</a> |
+                        <a href="#">עפולה</a>
+                    </p>
                 </div>
             </div>
 
@@ -404,6 +671,76 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Stats Counter and FAQ -->
+    <script>
+    // Stats Counter Animation
+    function animateCounters() {
+        const counters = document.querySelectorAll('.stat-number');
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            
+            const updateCounter = () => {
+                current += step;
+                if (current < target) {
+                    counter.textContent = Math.floor(current).toLocaleString('he-IL');
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target.toLocaleString('he-IL');
+                }
+            };
+            updateCounter();
+        });
+    }
+
+    // Intersection Observer for Stats
+    const statsSection = document.querySelector('.stats-counter');
+    if (statsSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        observer.observe(statsSection);
+    }
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const faqItem = button.parentElement;
+            const isOpen = faqItem.classList.contains('active');
+            
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            });
+            
+            // Open clicked if was closed
+            if (!isOpen) {
+                faqItem.classList.add('active');
+                button.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    if (mobileMenuBtn && navMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const isExpanded = navMenu.classList.contains('active');
+            mobileMenuBtn.setAttribute('aria-expanded', isExpanded);
+        });
+    }
+    </script>
 
 </body>
 </html>
