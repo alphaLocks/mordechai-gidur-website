@@ -93,8 +93,18 @@ header {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    height: 60px; /* גובה הלוגו */
+    height: 110px; /* גובה מאוזן ללוגו בתוך ההדר */
+    max-height: 110px;
+    width: auto;
+    object-fit: contain;
+    transform: scale(1.2);
+    transform-origin: center;
 }
 
 nav ul {
@@ -127,7 +137,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80');
+    background-image: url("pictures/WhatsApp Image 2025-12-09 at 10.42.38 AM.jpeg");
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -350,6 +360,12 @@ footer {
 @media (max-width: 768px) {
     .header-content {
         padding: 0 10px;
+    }
+
+    .logo img {
+        height: 80px;
+        max-height: 80px;
+        transform: scale(1.2);
     }
     
     nav ul {
