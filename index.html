@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מרדכי סיונוב - גידור אתרי בניה | פתרונות גידור מתקדמים</title>
-    <meta name="description" content="פתרונות גידור מקצועיים לאתרי בניה, גידור זמני, איסכורית ושערים. שירות אמין ומקצועי בכל הארץ.">
+    <title>קבלן גידור אתרי בניה | מרדכי סיונוב - פריסה ארצית</title>
+    <meta name="description" content="קבלן גידור אתרי בניה מוביל בישראל. גדרות איסכורית, פאנל, רשת זמנית, שערים ומעברים בטוחים. ביטוח קבלני מלא, עמידה בתקנים והקמה מהירה. 050-757-5570">
+    <meta name="keywords" content="גידור אתרי בניה, קבלן גידור, גדר איסכורית, גדר פאנל, גידור זמני, שערים לאתרי בניה, מעברים בטוחים, תיחום שטח">
     
     <link rel="stylesheet" href="style.css">
     
@@ -16,179 +17,391 @@
 </head>
 <body>
 
-    <a href="https://wa.me/972507575570" class="whatsapp-float" target="_blank">
+    <!-- כפתור וואטסאפ צף -->
+    <a href="https://wa.me/972507575570" class="whatsapp-float" target="_blank" aria-label="שלח הודעה בוואטסאפ">
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- 1. HEADER - המצפן של האתר -->
     <header>
         <div class="container header-content">
+            <!-- לוגו מימין -->
             <div class="logo">
-                <img src="logo.png" alt="מרדכי סיונוב גידור אתרי בניה">
+                <a href="#home">
+                    <img src="logo.png" alt="מרדכי סיונוב גידור אתרי בניה">
+                </a>
             </div>
-            <nav>
-                <ul>
+            
+            <!-- תפריט ניווט במרכז -->
+            <nav aria-label="תפריט ראשי">
+                <ul class="nav-menu">
                     <li><a href="#home">ראשי</a></li>
-                    <li><a href="#services">שירותים</a></li>
-                    <li><a href="#projects">פרויקטים</a></li>
+                    <li class="has-dropdown">
+                        <a href="#services">שירותים <i class="fas fa-chevron-down"></i></a>
+                        <!-- מוכן לתפריט נפתח בעתיד -->
+                        <ul class="dropdown-menu">
+                            <li><a href="#">גידור איסכורית</a></li>
+                            <li><a href="#">גדר פאנל קשיחה</a></li>
+                            <li><a href="#">רשת זמנית</a></li>
+                            <li><a href="#">שערים ומחסומים</a></li>
+                            <li><a href="#">מעברים בטוחים</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#areas">אזורי שירות <i class="fas fa-chevron-down"></i></a>
+                        <!-- מוכן לתפריט נפתח בעתיד -->
+                        <ul class="dropdown-menu">
+                            <li><a href="#">גידור בתל אביב</a></li>
+                            <li><a href="#">גידור בירושלים</a></li>
+                            <li><a href="#">גידור בחיפה</a></li>
+                            <li><a href="#">גידור בבאר שבע</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">למה אנחנו</a></li>
                     <li><a href="#contact" class="btn-nav">צור קשר</a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
+            
+            <!-- מספר טלפון בולט משמאל -->
+            <div class="header-phone">
+                <a href="tel:0507575570" class="phone-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>050-757-5570</span>
+                </a>
             </div>
+            
+            <!-- כפתור תפריט מובייל -->
+            <button class="mobile-menu-btn" aria-label="פתח תפריט" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1>בונים בראש שקט עם מעטפת בטחון מושלמת</h1>
-            <p>מומחים בגידור אתרי בניה, גדרות איסכורית ופתרונות תיחום זמניים בסטנדרט הגבוה ביותר.</p>
-            <div class="hero-buttons">
-                <a href="tel:0507575570" class="btn btn-primary"><i class="fas fa-phone-alt"></i> חייג עכשיו: 050-757-5570</a>
-                <a href="#contact" class="btn btn-secondary">קבל הצעת מחיר</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="features section-padding">
-        <div class="container grid-3">
-            <div class="feature-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>בטיחות מעל הכל</h3>
-                <p>עמידה בכל תקני הבטיחות המחמירים ביותר לגידור אתרי בניה ומוסדות.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-stopwatch"></i>
-                <h3>עמידה בלוחות זמנים</h3>
-                <p>אנו מבינים שזמן שווה כסף. התקנה מהירה, יעילה ומקצועית ללא עיכובים.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-tools"></i>
-                <h3>איכות חומרים</h3>
-                <p>שימוש בפח איסכורית ורשתות מגלוונות עמידות בפני כל תנאי מזג האוויר.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="services section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title">פתרונות הגידור שלנו</h2>
-            <div class="grid-3">
-                <div class="service-card">
-                    <div class="service-img">
-						<img src="pictures/WhatsApp Image 2025-12-09 at 10.41.36 AM.jpeg" alt="גידור איסכורית">
-                    </div>
-                    <div class="service-text">
-                        <h3>גידור איסכורית</h3>
-                        <p>גדרות פח אטומות (איסכורית) לתיחום אתרי בניה, שמירה על דיסקרטיות ומניעת כניסת בלתי מורשים.</p>
-                    </div>
+    <main>
+        <!-- 2. HERO SECTION - רושם ראשוני -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>קבלן גידור אתרי בניה בפריסה ארצית</h1>
+                <p class="hero-subtitle">שקט נפשי למנהל הפרויקט - עמידה בתקנים, ביטוח מלא והקמה מהירה</p>
+                <div class="hero-buttons">
+                    <a href="tel:0507575570" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> חייג עכשיו
+                    </a>
+                    <a href="https://wa.me/972507575570" class="btn btn-secondary btn-large" target="_blank">
+                        <i class="fab fa-whatsapp"></i> וואטסאפ / הצעת מחיר
+                    </a>
                 </div>
+            </div>
+        </section>
 
-                <div class="service-card">
-                    <div class="service-img">
-						<img src="pictures/WhatsApp Image 2025-12-09 at 10.43.20 AM.jpeg" alt="גידור איסכורית זמני">
+        <!-- 3. TRUST INDICATORS - בוני אמון -->
+        <section class="trust-indicators">
+            <div class="container">
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>ביטוח קבלני מלא</span>
                     </div>
-                    <div class="service-text">
-                        <h3>גידור איסכורית זמני</h3>
-                        <p>פתרונות גידור רשת ניידים (Mobile Fence) לאירועים, תשתיות ועבודות קצרות טווח.</p>
+                    <div class="trust-item">
+                        <i class="fas fa-hard-hat"></i>
+                        <span>עמידה בתקני בטיחות</span>
                     </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-img">
-						<img src="pictures/WhatsApp Image 2025-12-09 at 10.44.25 AM.jpeg" alt="שערים ומחסומים">
+                    <div class="trust-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>זמינות ארצית</span>
                     </div>
-                    <div class="service-text">
-                        <h3>שערים ומחסומים</h3>
-                        <p>התקנת שערי כניסה לרכבים כבדים, שערי פשפש להולכי רגל ומחסומי זרוע.</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-img">
-						<img src="pictures/WhatsApp Image 2025-12-09 at 10.53.03 AM.jpeg" alt="גדר פאנל קשיחה">
-                    </div>
-                    <div class="service-text">
-                        <h3>גדר פאנל קשיחה</h3>
-                        <p>פתרון גידור אסתטי וחזק במיוחד, עשוי רשתות פלדה מגלוונות וקשיחות. הגדר מודולרית, קשה לטיפוס ועמידה בפני חיתוך. מתאימה לתיחום היקפי קבוע או זמני כאשר חשוב לשמור על נראות גבוהה וסדר באתר.</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-img">
-						<img src="pictures/WhatsApp Image 2025-12-09 at 11.01.17 AM.jpeg" alt="מעברים בטוחים (מנהרות)">
-                    </div>
-                    <div class="service-text">
-                        <h3>מעברים בטוחים (מנהרות)</h3>
-                        <p>הקמת שרוולי הגנה ומנהרות להולכי רגל מעל מדרכות. קונסטרוקציה יציבה המגנה על העוברים ושבים מפני נפילת חפצים ופסולת בניין, ומאפשרת שמירה על שגרת חיים בטוחה ונגישה לציבור בצמוד לאתר הבניה.</p>
+                    <div class="trust-item">
+                        <i class="fas fa-clock"></i>
+                        <span>התקנה תוך 24 שעות</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact section-padding">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h2>דברו איתנו</h2>
-                    <p>נשמח לתת לכם ייעוץ והצעת מחיר משתלמת לפרויקט שלכם.</p>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>טלפון</h4>
-                            <a href="tel:0507575570">050-757-5570</a>
+        <!-- 4. SERVICES GRID - גריד השירותים -->
+        <section id="services" class="services section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">פתרונות הגידור שלנו</h2>
+                <div class="services-grid">
+                    <!-- כרטיסיית שירות 1: איסכורית -->
+                    <article class="service-card">
+                        <div class="service-img">
+                            <img src="pictures/WhatsApp Image 2025-12-09 at 10.41.36 AM.jpeg" alt="גדר איסכורית לאתר בניה - גדר פח אטומה">
                         </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>אימייל</h4>
-                            <a href="mailto:m0507575570@gmail.com">m0507575570@gmail.com</a>
+                        <div class="service-text">
+                            <h3>גידור איסכורית</h3>
+                            <p>גדרות פח אטומות (איסכורית) לתיחום אתרי בניה. מספקות דיסקרטיות מלאה, מניעת כניסת בלתי מורשים ומראה מקצועי לאתר שלכם.</p>
+                            <a href="#" class="btn btn-outline">קרא עוד</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>אזורי שירות</h4>
-                            <span>כל הארץ</span>
+                    <!-- כרטיסיית שירות 2: פאנל קשיחה -->
+                    <article class="service-card">
+                        <div class="service-img">
+                            <img src="pictures/WhatsApp Image 2025-12-09 at 10.53.03 AM.jpeg" alt="גדר פאנל קשיחה מגלוונת לאתר בניה">
                         </div>
-                    </div>
-                </div>
+                        <div class="service-text">
+                            <h3>גדר פאנל קשיחה</h3>
+                            <p>גידור אסתטי וחזק במיוחד, עשוי רשתות פלדה מגלוונות. מודולרית, קשה לטיפוס ועמידה בפני חיתוך. אידיאלית לתיחום היקפי.</p>
+                            <a href="#" class="btn btn-outline">קרא עוד</a>
+                        </div>
+                    </article>
 
-                <div class="contact-form-box">
-                    <form action="mailto:m0507575570@gmail.com" method="post" enctype="text/plain">
-                        <div class="form-group">
-                            <label>שם מלא</label>
-                            <input type="text" name="name" required>
+                    <!-- כרטיסיית שירות 3: רשת זמנית -->
+                    <article class="service-card">
+                        <div class="service-img">
+                            <img src="pictures/WhatsApp Image 2025-12-09 at 10.43.20 AM.jpeg" alt="גידור רשת זמני ניידת לאירועים ותשתיות">
                         </div>
-                        <div class="form-group">
-                            <label>טלפון</label>
-                            <input type="tel" name="phone" required>
+                        <div class="service-text">
+                            <h3>רשת זמנית (Mobile Fence)</h3>
+                            <p>גדרות ניידות קלות להתקנה ופירוק. פתרון מושלם לאירועים, עבודות תשתית קצרות ואתרים עם צורך בגמישות מקסימלית.</p>
+                            <a href="#" class="btn btn-outline">קרא עוד</a>
                         </div>
-                        <div class="form-group">
-                            <label>מה מעניין אתכם?</label>
-                            <select name="service">
-                                <option value="גידור איסכורית">גידור איסכורית</option>
-                                <option value="גידור זמני">גידור זמני / רשת</option>
-                                <option value="שערים">שערים ומחסומים</option>
-                                <option value="אחר">אחר</option>
-                            </select>
+                    </article>
+
+                    <!-- כרטיסיית שירות 4: שערים -->
+                    <article class="service-card">
+                        <div class="service-img">
+                            <img src="pictures/WhatsApp Image 2025-12-09 at 10.44.25 AM.jpeg" alt="שערי כניסה ומחסומים לאתרי בניה">
                         </div>
-                        <button type="submit" class="btn btn-primary full-width">שלח פרטים</button>
-                    </form>
+                        <div class="service-text">
+                            <h3>שערים ומחסומים</h3>
+                            <p>התקנת שערי כניסה לרכבים כבדים, שערי פשפש להולכי רגל ומחסומי זרוע. שליטה מלאה בכניסות ויציאות מהאתר.</p>
+                            <a href="#" class="btn btn-outline">קרא עוד</a>
+                        </div>
+                    </article>
+
+                    <!-- כרטיסיית שירות 5: מעברים בטוחים -->
+                    <article class="service-card">
+                        <div class="service-img">
+                            <img src="pictures/WhatsApp Image 2025-12-09 at 11.01.17 AM.jpeg" alt="מעברים בטוחים מנהרות להולכי רגל">
+                        </div>
+                        <div class="service-text">
+                            <h3>מעברים בטוחים (מנהרות)</h3>
+                            <p>שרוולי הגנה ומנהרות להולכי רגל. קונסטרוקציה יציבה המגנה על העוברים ושבים ומאפשרת שגרת חיים בטוחה בצמוד לאתר.</p>
+                            <a href="#" class="btn btn-outline">קרא עוד</a>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- 5. WHY CHOOSE US - למה לבחור בנו -->
+        <section id="about" class="why-us section-padding">
+            <div class="container">
+                <div class="why-us-wrapper">
+                    <div class="why-us-content">
+                        <h2 class="section-title text-right">למה לבחור במרדכי סיונוב?</h2>
+                        <p class="why-us-intro">אנחנו מבינים את הכאבים של מנהלי פרויקטים באתרי בניה. הנה מה שמבדיל אותנו:</p>
+                        
+                        <ul class="benefits-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>אנחנו לא מאחרים</strong>
+                                    <p>עמידה קפדנית בלוחות זמנים - כי עיכוב בגדר = עיכוב בפרויקט כולו</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>הגדר לא נופלת ברוח</strong>
+                                    <p>התקנה מקצועית עם עיגון מחוזק - בטיחות אמיתית, לא רק על הנייר</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>משאירים שטח נקי</strong>
+                                    <p>פירוק מסודר וניקיון מלא - בלי קנסות מהעירייה ובלי הפתעות</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>ביטוח קבלני מלא</strong>
+                                    <p>כיסוי ביטוחי מקיף לכל עבודה - שקט נפשי מלא למנהל הפרויקט</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>מענה מהיר 24/7</strong>
+                                    <p>זמינות מלאה לתקלות ושינויים - כי אתר בניה לא מחכה</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="why-us-image">
+                        <img src="pictures/WhatsApp Image 2025-12-09 at 10.42.38 AM.jpeg" alt="גידור מקצועי באתר בניה">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. SEO TEXT - טקסט לקידום -->
+        <section class="seo-section section-padding bg-light">
+            <div class="container">
+                <article class="seo-content">
+                    <h2>גידור אתרי בניה - כל מה שצריך לדעת</h2>
+                    <p>
+                        <strong>גידור אתרי בניה</strong> הוא חלק בלתי נפרד מכל פרויקט בנייה בישראל. בין אם מדובר בבניין מגורים, פרויקט תשתיות או שיפוץ מסחרי, 
+                        <strong>תיחום השטח</strong> הוא דרישה חוקית ובטיחותית שאין להתעלם ממנה. גדר איכותית מונעת כניסת אנשים לא מורשים לאתר, מגנה על הציבור מפני סכנות בניה, 
+                        ומעניקה למנהל הפרויקט שליטה מלאה על האתר שלו.
+                    </p>
+                    <p>
+                        קיימים מספר סוגים עיקריים של <strong>גדרות לאתרי בניה</strong>: <strong>גדר איסכורית</strong> (גדר פח) מספקת אטימות מלאה והסתרת האתר מעיני הציבור. 
+                        <strong>גדר פאנל</strong> עשויה רשת פלדה קשיחה ומתאימה כשרוצים לשמור על נראות גבוהה. <strong>גידור זמני</strong> ברשת ניידת הוא פתרון גמיש ומהיר להתקנה 
+                        המתאים לעבודות קצרות או לאירועים.
+                    </p>
+                    <p>
+                        בחירת <strong>קבלן גידור</strong> מקצועי היא קריטית להצלחת הפרויקט. יש לוודא שהקבלן מחזיק בביטוח קבלני מתאים, עומד בתקני הבטיחות של משרד העבודה, 
+                        ומסוגל לספק שירות בכל רחבי הארץ. <strong>גידור לקבלנים</strong> איכותי כולל גם התקנת שערים, מחסומים ומעברים בטוחים להולכי רגל כנדרש בחוק.
+                    </p>
+                    <p>
+                        אנחנו ב<strong>מרדכי סיונוב גידור אתרי בניה</strong> מתמחים בכל סוגי הגידור לאתרי בניה כבר שנים רבות. אנו מציעים פתרונות מותאמים אישית לכל פרויקט, 
+                        עם דגש על <strong>עמידה בתקנים</strong>, <strong>התקנה מהירה</strong> ו<strong>שירות אמין</strong>. צרו קשר לקבלת הצעת מחיר ללא התחייבות.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 7. CONTACT FORM + MAP - טופס יצירת קשר -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <h2 class="section-title">צור קשר - נחזור אליך תוך שעה</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>דברו איתנו</h3>
+                        <p>נשמח לתת לכם ייעוץ והצעת מחיר משתלמת לפרויקט שלכם.</p>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>טלפון</h4>
+                                <a href="tel:0507575570">050-757-5570</a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>וואטסאפ</h4>
+                                <a href="https://wa.me/972507575570" target="_blank">שלח הודעה</a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>אימייל</h4>
+                                <a href="mailto:m0507575570@gmail.com">m0507575570@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>אזורי שירות</h4>
+                                <span>כל רחבי הארץ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-box">
+                        <form action="mailto:m0507575570@gmail.com" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="name">שם מלא</label>
+                                <input type="text" id="name" name="name" placeholder="הכנס שם מלא" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">טלפון</label>
+                                <input type="tel" id="phone" name="phone" placeholder="050-000-0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">סוג השירות</label>
+                                <select id="service" name="service">
+                                    <option value="">בחר סוג שירות</option>
+                                    <option value="גידור איסכורית">גידור איסכורית</option>
+                                    <option value="גדר פאנל">גדר פאנל קשיחה</option>
+                                    <option value="רשת זמנית">רשת זמנית (Mobile Fence)</option>
+                                    <option value="שערים">שערים ומחסומים</option>
+                                    <option value="מעברים בטוחים">מעברים בטוחים (מנהרות)</option>
+                                    <option value="אחר">אחר</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width">שלח פרטים וקבל הצעת מחיר</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- מקום למפה בעתיד -->
+                <div class="map-placeholder">
+                    <p><i class="fas fa-map-marked-alt"></i> מפת אזורי השירות תתווסף בקרוב</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. FOOTER - כותרת תחתונה -->
     <footer>
-        <div class="container footer-content">
-            <p>&copy; 2024 מרדכי סיונוב גידור אתרי בניה. כל הזכויות שמורות.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- עמודה 1: אודות ופרטי קשר -->
+                <div class="footer-column">
+                    <h4>מרדכי סיונוב גידור</h4>
+                    <p>מומחים בגידור אתרי בניה עם שנים של ניסיון. ביטוח מלא, עמידה בתקנים ושירות אמין בכל הארץ.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> <a href="tel:0507575570">050-757-5570</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:m0507575570@gmail.com">m0507575570@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- עמודה 2: שירותים -->
+                <div class="footer-column">
+                    <h4>השירותים שלנו</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">גידור איסכורית</a></li>
+                        <li><a href="#">גדר פאנל קשיחה</a></li>
+                        <li><a href="#">רשת זמנית (Mobile Fence)</a></li>
+                        <li><a href="#">שערים ומחסומים</a></li>
+                        <li><a href="#">מעברים בטוחים (מנהרות)</a></li>
+                    </ul>
+                </div>
+
+                <!-- עמודה 3: אזורי שירות -->
+                <div class="footer-column">
+                    <h4>אזורי שירות</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">גידור אתרי בניה בתל אביב</a></li>
+                        <li><a href="#">גידור אתרי בניה בירושלים</a></li>
+                        <li><a href="#">גידור אתרי בניה בחיפה</a></li>
+                        <li><a href="#">גידור אתרי בניה בבאר שבע</a></li>
+                        <li><a href="#">גידור אתרי בניה בראשון לציון</a></li>
+                        <li><a href="#">גידור אתרי בניה בפתח תקווה</a></li>
+                    </ul>
+                </div>
+
+                <!-- עמודה 4: קישורים מהירים -->
+                <div class="footer-column">
+                    <h4>קישורים מהירים</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">דף הבית</a></li>
+                        <li><a href="#services">השירותים שלנו</a></li>
+                        <li><a href="#about">למה לבחור בנו</a></li>
+                        <li><a href="#contact">צור קשר</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="https://wa.me/972507575570" target="_blank" aria-label="וואטסאפ"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="פייסבוק"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 מרדכי סיונוב גידור אתרי בניה. כל הזכויות שמורות.</p>
+            </div>
         </div>
     </footer>
 
