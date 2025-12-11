@@ -12,8 +12,13 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://www.negishim.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Font Awesome - loaded with media print hack to avoid render blocking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -45,7 +50,6 @@
         </div>
     </div>
 
-    <!-- Skip to main content - Accessibility -->
     <a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
 
     <!-- WhatsApp Floating Button -->
@@ -82,9 +86,7 @@
                                 <h4>פתרונות משלימים</h4>
                                 <ul>
                                 <li><a href="tree-protection.html">הגנת עצים באתרי בניה</a></li>
-                                <li><a href="crowd-control.html">מחסומי קהל</a></li>
                                 <li><a href="branding.html">מיתוג גדרות</a></li>
-                                <li><a href="concrete-blocks.html">בלוקי בטון ומחסומי ניוד</a></li>
                                 <li><a href="signage.html">שילוט בטיחות</a></li>
                                 </ul>
                             </div>
@@ -255,9 +257,7 @@
                             <li><a href="gates.html">שערים לאתרי בניה</a></li>
                             <li><a href="passages.html">מעברי הולכי רגל</a></li>
                             <li><a href="tree-protection.html">הגנת עצים באתרי בניה</a></li>
-                            <li><a href="crowd-control.html">מחסומי קהל</a></li>
                             <li><a href="branding.html">מיתוג גדרות</a></li>
-                            <li><a href="concrete-blocks.html">בלוקי בטון ומחסומי ניוד</a></li>
                             </ul>
                         </div>
 
@@ -302,7 +302,6 @@
             </div>
         </section>
     </main>
-
 
     <!-- FOOTER -->
     <footer>
@@ -418,18 +417,9 @@
     }
     </script>
 
-    <!-- Accessibility Module - מודול נגישות -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
-    <script src="https://www.negishim.com/accessibility/accessibility_pro_group255.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        accessibility_rtl = true;
-        pixel_from_side = 20;
-        pixel_from_start = 20;
-        css_style = 2;
-    </script>
+    <!-- Accessibility controls without eval -->
+    <script src="accessibility.js" defer></script>
 
 </body>
 </html>
-
-
 

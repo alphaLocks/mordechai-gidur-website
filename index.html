@@ -8,21 +8,30 @@
     <meta name="keywords" content="גידור אתרי בניה, קבלן גידור, גדר איסכורית, גדר פאנל, גידור זמני, שערים לאתרי בניה, מעברים בטוחים, תיחום שטח">
     
     <link rel="icon" type="image/svg+xml" href="logo.svg">
+    
     <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://www.negishim.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Preload LCP images for faster rendering -->
+    <link rel="preload" as="image" href="pictures/hero-fence-site.jpeg" fetchpriority="high">
+    <link rel="preload" as="image" href="pictures/service-iskurit.jpeg" fetchpriority="high">
+    
+    <!-- Font Awesome - loaded with media print hack to avoid render blocking, then switched to all on load -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
 </head>
 <body>
 
     <!-- Cookie Banner - באנר עוגיות -->
-    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="הודעת עוגיות" aria-describedby="cookie-desc">
         <div class="cookie-banner-content">
             <div class="cookie-banner-text">
-                <p id="cookie-desc"><i class="fas fa-cookie-bite"></i> אתר זה משתמש בעוגיות (Cookies) לשיפור חווית הגלישה ולצורך טעינת גופנים. המשך גלישה באתר מהווה הסכמה לשימוש בעוגיות. <a href="privacy-policy.html">למידע נוסף</a></p>
+                <p id="cookie-desc"><i class="fas fa-cookie-bite"></i> אתר זה משתמש בעוגיות (Cookies) לשיפור חווית הגלישה ולצורך טעינת גופנים. המשך גלישה באתר מהווה הסכמה לשימוש בעוגיות. <a href="privacy-policy.html">קרא את מדיניות הפרטיות</a></p>
             </div>
             <div class="cookie-banner-buttons">
                 <button id="cookie-accept" class="cookie-btn cookie-btn-accept">אני מסכים</button>
@@ -34,7 +43,7 @@
     <a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
 
     <!-- כפתור וואטסאפ צף -->
-    <a href="https://wa.me/972507575570" class="whatsapp-float" target="_blank" aria-label="שלח הודעה בוואטסאפ">
+    <a href="https://wa.me/972507575570" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="שלח הודעה בוואטסאפ">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -49,7 +58,7 @@
             <i class="fas fa-phone-alt"></i>
             <span>התקשר</span>
         </a>
-        <a href="https://wa.me/972507575570" class="sticky-whatsapp" target="_blank" aria-label="שלח וואטסאפ">
+        <a href="https://wa.me/972507575570" class="sticky-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="שלח וואטסאפ">
             <i class="fab fa-whatsapp"></i>
             <span>וואטסאפ</span>
         </a>
@@ -61,7 +70,7 @@
             <!-- לוגו מימין -->
             <div class="logo">
                 <a href="#home">
-                    <img src="logo.svg" alt="מרדכי סיונוב גידור אתרי בניה">
+                    <img src="logo.svg" alt="מרדכי סיונוב גידור אתרי בניה" width="120" height="120">
                 </a>
             </div>
             
@@ -86,9 +95,7 @@
                                 <h4><i class="fas fa-plus-circle"></i> פתרונות משלימים</h4>
                                 <ul>
                                     <li><a href="services/tree-protection.html"><i class="fas fa-tree"></i> הגנת עצים</a></li>
-                                    <li><a href="services/crowd-control.html"><i class="fas fa-users"></i> מחסומי קהל</a></li>
                                     <li><a href="services/branding.html"><i class="fas fa-paint-brush"></i> מיתוג גדרות</a></li>
-                                    <li><a href="services/concrete-blocks.html"><i class="fas fa-cube"></i> בלוקי בטון</a></li>
                                     <li><a href="services/signage.html"><i class="fas fa-sign"></i> שילוט בטיחות</a></li>
                                 </ul>
                             </div>
@@ -172,7 +179,7 @@
                     <a href="tel:0507575570" class="btn btn-primary btn-large">
                         <i class="fas fa-phone-alt"></i> חייג עכשיו
                     </a>
-                    <a href="https://wa.me/972507575570" class="btn btn-secondary btn-large" target="_blank">
+                    <a href="https://wa.me/972507575570" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-whatsapp"></i> וואטסאפ / הצעת מחיר
                     </a>
                 </div>
@@ -183,6 +190,7 @@
         <!-- 3. TRUST INDICATORS - בוני אמון -->
         <section class="trust-indicators">
             <div class="container">
+                <h2 class="sr-only">יתרונות השירות</h2>
                 <div class="trust-grid">
                     <div class="trust-item">
                         <i class="fas fa-shield-alt"></i>
@@ -207,6 +215,7 @@
         <!-- STATS COUNTER - מונה דינמי -->
         <section class="stats-counter">
             <div class="container">
+                <h2 class="sr-only">נתונים במספרים</h2>
                 <div class="stats-grid">
                     <div class="stat-item">
                         <div class="stat-number" data-target="150">0</div>
@@ -272,6 +281,7 @@
         <!-- CLIENTS LOGOS - לוגואים של לקוחות -->
         <section class="clients-logos">
             <div class="container">
+                <h2 class="sr-only">לקוחות שעבדנו איתם</h2>
                 <p class="clients-title">עבדנו עם חברות הבניה המובילות בישראל</p>
                 <div class="logos-slider">
                     <div class="logo-item"><span>דניה סיבוס</span></div>
@@ -290,123 +300,99 @@
                 <h2 class="section-title">פתרונות הגידור שלנו</h2>
                 <p class="section-lead">פתרונות גידור מותאמים לאתרי בניה, כולל כניסות, מעברים, שילוט והגנה על עצים – עם התקנה מהירה ועמידה בדרישות הבטיחות.</p>
                 <div class="services-grid">
-                    <!-- כרטיסיית שירות 1: איסכורית -->
+                    <!-- כרטיסיית שירות 1: איסכורית - LCP image, no lazy loading -->
                     <article class="service-card">
                         <div class="service-img">
-                            <img src="pictures/WhatsApp Image 2025-12-09 at 10.41.36 AM.jpeg" alt="גדר איסכורית לאתר בניה - גדר פח אטומה" loading="lazy">
+                            <img src="pictures/service-iskurit.jpeg" alt="גדר איסכורית לאתר בניה - גדר פח אטומה" fetchpriority="high" width="391" height="220">
                         </div>
                         <div class="service-text">
                             <h3>גידור איסכורית</h3>
                             <p>גדרות פח אטומות (איסכורית) לתיחום אתרי בניה. מספקות דיסקרטיות מלאה, מניעת כניסת בלתי מורשים ומראה מקצועי לאתר שלכם.</p>
-                            <a href="services/iskurit.html" class="btn btn-outline">למידע נוסף</a>
+                            <a href="services/iskurit.html" class="btn btn-outline">מידע נוסף על גידור איסכורית</a>
                         </div>
                     </article>
 
                     <!-- כרטיסיית שירות 2: פאנל קשיחה -->
                     <article class="service-card">
                         <div class="service-img">
-                            <img src="pictures/WhatsApp Image 2025-12-09 at 10.53.03 AM.jpeg" alt="גדר פאנל קשיחה מגלוונת לאתר בניה" loading="lazy">
+                            <img src="pictures/service-panel.jpeg" alt="גדר פאנל קשיחה מגלוונת לאתר בניה" loading="lazy" width="489" height="220">
                         </div>
                         <div class="service-text">
                             <h3>גדר פאנל קשיחה</h3>
                             <p>גידור אסתטי וחזק במיוחד, עשוי רשתות פלדה מגלוונות. מודולרית, קשה לטיפוס ועמידה בפני חיתוך. אידיאלית לתיחום היקפי.</p>
-                            <a href="services/panel.html" class="btn btn-outline">למידע נוסף</a>
+                            <a href="services/panel.html" class="btn btn-outline">מידע נוסף על גדר פאנל</a>
                         </div>
                     </article>
 
                     <!-- כרטיסיית שירות 3: רשת זמנית -->
                     <article class="service-card">
                         <div class="service-img">
-                            <img src="pictures/WhatsApp Image 2025-12-09 at 10.43.20 AM.jpeg" alt="גידור רשת זמני ניידת לאירועים ותשתיות" loading="lazy">
+                            <img src="pictures/service-reshet.jpeg" alt="גידור רשת זמני ניידת לאירועים ותשתיות" loading="lazy" decoding="async" width="1600" height="720">
                         </div>
                         <div class="service-text">
                             <h3>רשת זמנית (Mobile Fence)</h3>
                             <p>גדרות ניידות קלות להתקנה ופירוק. פתרון מושלם לאירועים, עבודות תשתית קצרות ואתרים עם צורך בגמישות מקסימלית.</p>
-                            <a href="services/reshet.html" class="btn btn-outline">למידע נוסף</a>
+                            <a href="services/reshet.html" class="btn btn-outline">מידע נוסף על רשת זמנית</a>
                         </div>
                     </article>
 
                     <!-- כרטיסיית שירות 4: שערים -->
                     <article class="service-card">
                         <div class="service-img">
-                            <img src="pictures/WhatsApp Image 2025-12-09 at 10.44.25 AM.jpeg" alt="שערי כניסה ומחסומים לאתרי בניה" loading="lazy">
+                            <img src="pictures/service-gates.jpeg" alt="שערי כניסה ומחסומים לאתרי בניה" loading="lazy" decoding="async" width="1600" height="1200">
                         </div>
                         <div class="service-text">
                             <h3>שערים ומחסומים</h3>
                             <p>התקנת שערי כניסה לרכבים כבדים, שערי פשפש להולכי רגל ומחסומי זרוע. שליטה מלאה בכניסות ויציאות מהאתר.</p>
-                            <a href="services/gates.html" class="btn btn-outline">למידע נוסף</a>
+                            <a href="services/gates.html" class="btn btn-outline">מידע נוסף על שערים</a>
                         </div>
                     </article>
 
                     <!-- כרטיסיית שירות 5: מעברים בטוחים -->
                     <article class="service-card">
                         <div class="service-img">
-                            <img src="pictures/WhatsApp Image 2025-12-09 at 11.01.17 AM.jpeg" alt="מעברים בטוחים מנהרות להולכי רגל" loading="lazy">
+                            <img src="pictures/service-passages.jpeg" alt="מעברים בטוחים מנהרות להולכי רגל" loading="lazy" decoding="async" width="1600" height="900">
                         </div>
                         <div class="service-text">
                             <h3>מעברים בטוחים (מנהרות)</h3>
                             <p>שרוולי הגנה ומנהרות להולכי רגל. קונסטרוקציה יציבה המגנה על העוברים ושבים ומאפשרת שגרת חיים בטוחה בצמוד לאתר.</p>
-                            <a href="services/passages.html" class="btn btn-outline">למידע נוסף</a>
+                            <a href="services/passages.html" class="btn btn-outline">מידע נוסף על מעברים</a>
                         </div>
                     </article>
 
                     <!-- כרטיסיית שירות 6: הגנה על עצים -->
                     <article class="service-card">
                         <div class="service-img">
-                            <img src="pictures/WhatsApp Image 2025-12-09 at 10.53.07 AM.jpeg" alt="גידור להגנה על עצים בוגרים באתרי בניה" loading="lazy">
+                            <img src="pictures/service-tree-protection.jpeg" alt="גידור להגנה על עצים בוגרים באתרי בניה" loading="lazy" decoding="async" width="1600" height="720">
                         </div>
                         <div class="service-text">
                             <h3>גידור והגנה על עצים</h3>
                             <p>גידור מיוחד לעצים בוגרים באתרי בניה לפי הנחיות פקיד היערות. מניעת קנסות ועמידה בדרישות היתר הבניה.</p>
-                            <a href="services/tree-protection.html" class="btn btn-outline">למידע נוסף</a>
-                        </div>
-                    </article>
-
-                    <!-- כרטיסיית שירות 7: מחסומי אירועים -->
-                    <article class="service-card">
-                        <div class="service-img">
-                            <img src="pictures/WhatsApp Image 2025-12-09 at 10.53.08 AM.jpeg" alt="מחסומי לחץ ואירועים לשליטה בקהל" loading="lazy">
-                        </div>
-                        <div class="service-text">
-                            <h3>מחסומי לחץ ואירועים</h3>
-                            <p>מחסומים לשליטה בקהל באירועים, הופעות, מרתונים ואירועי עירייה. פתרון מקצועי לכל סוגי האירועים.</p>
-                            <a href="services/crowd-control.html" class="btn btn-outline">למידע נוסף</a>
+                            <a href="services/tree-protection.html" class="btn btn-outline">מידע נוסף על הגנת עצים</a>
                         </div>
                     </article>
 
                     <!-- כרטיסיית שירות 8: יוטה ומיתוג -->
                     <article class="service-card">
                         <div class="service-img">
-                            <img src="pictures/WhatsApp Image 2025-12-09 at 10.53.09 AM.jpeg" alt="יוטה ומיתוג גדרות באתרי בניה" loading="lazy">
+                            <img src="pictures/service-branding.jpeg" alt="יוטה ומיתוג גדרות באתרי בניה" loading="lazy" decoding="async" width="1600" height="900">
                         </div>
                         <div class="service-text">
                             <h3>חיפוי יוטה ומיתוג גדרות</h3>
                             <p>רשת צל (יוטה) להסתרה והצללה, והדפסת לוגו ומיתוג על הגדר. שדרגו את המראה המקצועי של האתר שלכם.</p>
-                            <a href="services/branding.html" class="btn btn-outline">למידע נוסף</a>
+                            <a href="services/branding.html" class="btn btn-outline">מידע נוסף על מיתוג</a>
                         </div>
                     </article>
 
-                    <!-- כרטיסיית שירות 9: בטונדות -->
+                    <!-- כרטיסיית שירות 9: שילוט בטיחות -->
                     <article class="service-card">
                         <div class="service-img">
-                            <img src="pictures/WhatsApp Image 2025-12-09 at 11.01.18 AM (2).jpeg" alt="בטונדות וקוביות בטון לעיגון גדרות" loading="lazy">
-                        </div>
-                        <div class="service-text">
-                            <h3>קוביות בטון (בטונדות)</h3>
-                            <p>בסיסי בטון לעיגון גדרות, חסימת כבישים ותיחום אזורים באתרי תשתית. פתרון יציב וחזק במיוחד.</p>
-                            <a href="services/concrete-blocks.html" class="btn btn-outline">למידע נוסף</a>
-                        </div>
-                    </article>
-
-                    <!-- כרטיסיית שירות 10: שילוט בטיחות -->
-                    <article class="service-card">
-                        <div class="service-img">
-                            <img src="pictures/WhatsApp Image 2025-12-09 at 11.01.18 AM (3).jpeg" alt="שילוט בטיחות לאתרי בניה" loading="lazy">
+                            <img src="pictures/service-signage.jpeg" alt="שילוט בטיחות לאתרי בניה" loading="lazy" decoding="async" width="1599" height="722">
                         </div>
                         <div class="service-text">
                             <h3>שילוט בטיחות לאתרי בניה</h3>
                             <p>שילוט מחייב לפי חוק: "סכנה כאן בונים", "חובה לחבוש קסדה" ועוד. קבלו חבילת גדר + שילוט חוקי במחיר משתלם.</p>
-                            <a href="services/signage.html" class="btn btn-outline">למידע נוסף</a>
+                            <a href="services/signage.html" class="btn btn-outline">מידע נוסף על שילוט</a>
                         </div>
                     </article>
                 </div>
@@ -420,73 +406,73 @@
                 <p class="section-subtitle">מבחר מהעבודות האחרונות שלנו באתרי בניה ברחבי הארץ</p>
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 10.42.00 AM.jpeg" alt="פרויקט גידור אתר בניה" loading="lazy">
+                        <img src="pictures/project-01.jpeg" alt="פרויקט גידור אתר בניה" loading="lazy" decoding="async" width="1600" height="900">
                         <div class="gallery-overlay">
                             <span>גידור אתר מגורים</span>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 10.44.52 AM.jpeg" alt="גדר פאנל לפרויקט תשתיות" loading="lazy">
+                        <img src="pictures/project-02.jpeg" alt="גדר פאנל לפרויקט תשתיות" loading="lazy" decoding="async" width="1600" height="1200">
                         <div class="gallery-overlay">
                             <span>גדר פאנל - פרויקט תשתיות</span>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 10.52.58 AM.jpeg" alt="גידור איסכורית לבניין מגורים" loading="lazy">
+                        <img src="pictures/project-03.jpeg" alt="גידור איסכורית לבניין מגורים" loading="lazy" decoding="async" width="1600" height="720">
                         <div class="gallery-overlay">
                             <span>גידור איסכורית</span>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 10.52.59 AM.jpeg" alt="התקנת גדר בפרויקט בנייה" loading="lazy">
+                        <img src="pictures/project-04.jpeg" alt="התקנת גדר בפרויקט בנייה" loading="lazy" decoding="async" width="1600" height="720">
                         <div class="gallery-overlay">
                             <span>התקנה מקצועית</span>
                         </div>
                     </div>
                     <div class="gallery-item large">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 10.53.00 AM.jpeg" alt="מעבר הולכי רגל מוגן" loading="lazy">
+                        <img src="pictures/project-05.jpeg" alt="מעבר הולכי רגל מוגן" loading="lazy" decoding="async" width="1600" height="720">
                         <div class="gallery-overlay">
                             <span>מעבר הולכי רגל מוגן</span>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 10.53.03 AM (1).jpeg" alt="גדר רשת זמנית" loading="lazy">
+                        <img src="pictures/project-06.jpeg" alt="גדר רשת זמנית" loading="lazy" decoding="async" width="1600" height="720">
                         <div class="gallery-overlay">
                             <span>גדר רשת זמנית</span>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 10.53.04 AM.jpeg" alt="שער כניסה לאתר בניה" loading="lazy">
+                        <img src="pictures/project-07.jpeg" alt="שער כניסה לאתר בניה" loading="lazy" decoding="async" width="1600" height="720">
                         <div class="gallery-overlay">
                             <span>שער כניסה לאתר</span>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 10.53.05 AM.jpeg" alt="גידור היקפי מקצועי" loading="lazy">
+                        <img src="pictures/project-08.jpeg" alt="גידור היקפי מקצועי" loading="lazy" decoding="async" width="1600" height="1200">
                         <div class="gallery-overlay">
                             <span>גידור היקפי</span>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 10.53.06 AM.jpeg" alt="עיגון גדרות בבטונדות" loading="lazy">
+                        <img src="pictures/project-09.jpeg" alt="עיגון גדרות בבטונדות" loading="lazy" decoding="async" width="1600" height="720">
                         <div class="gallery-overlay">
                             <span>עיגון בבטונדות</span>
                         </div>
                     </div>
                     <div class="gallery-item large">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 11.01.17 AM (1).jpeg" alt="מנהרת מעבר בטוחה" loading="lazy">
+                        <img src="pictures/project-10.jpeg" alt="מנהרת מעבר בטוחה" loading="lazy" decoding="async" width="1600" height="720">
                         <div class="gallery-overlay">
                             <span>מנהרת מעבר בטוחה</span>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 11.01.18 AM.jpeg" alt="גידור אתר בניה עירוני" loading="lazy">
+                        <img src="pictures/project-11.jpeg" alt="גידור אתר בניה עירוני" loading="lazy" decoding="async" width="722" height="1599">
                         <div class="gallery-overlay">
                             <span>פרויקט עירוני</span>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 11.01.18 AM (1).jpeg" alt="גדר פאנל מגלוונת" loading="lazy">
+                        <img src="pictures/project-12.jpeg" alt="גדר פאנל מגלוונת" loading="lazy" decoding="async" width="1599" height="722">
                         <div class="gallery-overlay">
                             <span>גדר פאנל מגלוונת</span>
                         </div>
@@ -542,7 +528,7 @@
                         </ul>
                     </div>
                     <div class="why-us-image">
-                        <img src="pictures/WhatsApp Image 2025-12-09 at 10.42.38 AM.jpeg" alt="גידור מקצועי באתר בניה" loading="lazy">
+                        <img src="pictures/hero-fence-site.jpeg" alt="גידור מקצועי באתר בניה" loading="lazy" decoding="async" width="1600" height="900">
                     </div>
                 </div>
             </div>
@@ -551,6 +537,7 @@
         <!-- 6. SEO TEXT - טקסט לקידום -->
         <section class="seo-section section-padding bg-light">
             <div class="container">
+                <h2 class="sr-only">מידע נוסף לקידום</h2>
                 <article class="seo-content">
                     <h2>גידור אתרי בניה - כל מה שצריך לדעת</h2>
                     <p>
@@ -650,7 +637,7 @@
                             <i class="fab fa-whatsapp"></i>
                             <div>
                                 <h4>וואטסאפ</h4>
-                                <a href="https://wa.me/972507575570" target="_blank">שלח הודעה</a>
+                                <a href="https://wa.me/972507575570" target="_blank" rel="noopener noreferrer">שלח הודעה</a>
                             </div>
                         </div>
                         
@@ -675,11 +662,11 @@
                         <form id="contact-form">
                             <div class="form-group">
                                 <label for="name">שם מלא</label>
-                                <input type="text" id="name" name="name" placeholder="הכנס שם מלא" required aria-required="true" autocomplete="name">
+                                <input type="text" id="name" name="name" placeholder="הכנס שם מלא" required autocomplete="name">
                             </div>
                             <div class="form-group">
                                 <label for="phone">טלפון</label>
-                                <input type="tel" id="phone" name="phone" placeholder="050-000-0000" required aria-required="true" autocomplete="tel">
+                                <input type="tel" id="phone" name="phone" placeholder="050-000-0000" required autocomplete="tel">
                             </div>
                             <div class="form-group">
                                 <label for="service">סוג השירות</label>
@@ -741,7 +728,7 @@
                         <p><i class="fas fa-map-marker-alt"></i> שירות ארצי</p>
                     </div>
                     <div class="footer-social">
-                        <a href="https://wa.me/972507575570" target="_blank" aria-label="וואטסאפ"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/972507575570" target="_blank" rel="noopener noreferrer" aria-label="וואטסאפ"><i class="fab fa-whatsapp"></i></a>
                         <a href="#" aria-label="פייסבוק"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
@@ -763,9 +750,7 @@
                     <h4>מוצרים משלימים</h4>
                     <ul class="footer-links">
                         <li><a href="services/tree-protection.html">הגנת עצים</a></li>
-                        <li><a href="services/crowd-control.html">מחסומי קהל</a></li>
                         <li><a href="services/branding.html">מיתוג גדרות</a></li>
-                        <li><a href="services/concrete-blocks.html">בלוקי בטון</a></li>
                         <li><a href="services/signage.html">שילוט בטיחות</a></li>
                     </ul>
                 </div>
@@ -946,7 +931,7 @@
             } else {
                 scrollTopBtn.classList.remove('visible');
             }
-        });
+        }, { passive: true });
 
         scrollTopBtn.addEventListener('click', () => {
             window.scrollTo({
@@ -1025,17 +1010,8 @@
     }
     </script>
 
-    <!-- Accessibility Module - מודול נגישות -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
-    <script src="https://www.negishim.com/accessibility/accessibility_pro_group255.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        accessibility_rtl = true;
-        pixel_from_side = 20;
-        pixel_from_start = 20;
-        css_style = 2;
-    </script>
+    <!-- Accessibility controls without eval -->
+    <script src="accessibility.js" defer></script>
 
 </body>
 </html>
-
-
