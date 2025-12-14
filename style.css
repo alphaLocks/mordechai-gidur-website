@@ -1291,6 +1291,116 @@ footer {
     transform: translateY(-3px);
 }
 
+/* Footer Map Section */
+.footer-map-section {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-map-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.footer-map {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.footer-map iframe {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+}
+
+.footer-map-info {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.footer-map-info h4 {
+    color: var(--white);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.footer-map-address {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 15px;
+}
+
+.footer-map-address i {
+    color: var(--accent-color);
+    margin-left: 8px;
+}
+
+.footer-map-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.rating-stars {
+    color: #fbbc04;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.rating-text {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.rating-link {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.rating-link:hover {
+    color: var(--accent-color);
+}
+
+.map-directions-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.map-directions-btn:hover {
+    background: #e08a00;
+    transform: translateY(-2px);
+}
+
+.map-directions-btn i {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .footer-map-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-map iframe {
+        min-height: 250px;
+    }
+}
+
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 20px;
