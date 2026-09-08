@@ -972,14 +972,20 @@ def build_blog():
                    + _json.dumps(index_schema, ensure_ascii=False, indent=4).replace("\n", "\n    ")
                    + "\n    </script>")
     page = template
-    # Targeted at the head term this page is already favoured on: 154 of its 205
-    # query-attributed impressions (28d to 2026-08-04) are "גידור אתרי בנייה" and its
-    # spellings, at pos 20.5-21.3, ahead of the homepage on every one of them. Shape is
-    # the site's own measured winner - question, exact term first, 50-53 chars, no brand
-    # suffix; the only two pages here that click (2.05% / 1.96%) both look like this.
-    page = page.replace("{meta_title}", "גידור אתרי בנייה: איזו גדר, באיזה מחיר ולפי איזה תקן?")
-    page = page.replace("{meta_description}", "מדריכים מהשטח לגידור אתרי בנייה: איך בוחרים בין איסכורית, פאנל ורשת, מה משפיע על המחיר למטר, אילו תקני בטיחות חלים ומה החוק מחייב. 050-757-5570")
-    page = page.replace("{meta_keywords}", "גידור אתרי בנייה, גידור אתר בנייה, מדריכי גידור, מחיר גידור אתר בנייה, תקני בטיחות, גדר איסכורית")
+    # ARCHIVE INTENT, not head-term intent. 391c9a1 aimed this page at the commercial
+    # head terms and its prediction MISSED on 2026-09-08: 416 impressions, 0 clicks,
+    # pos 31.3 against a <=15 target, and its own falsifier said a ranking this page
+    # cannot hold is not a title problem. Worse, the claim cost the articles: on
+    # "גידור אתר בניה מחיר" the index ranked 9.8 and /blog/gidur-price-guide 11.5, and
+    # on "גידור אתרי בניה מחיר" 12.5 against 15.2 - the card list outranking the 1062-word
+    # guide built for the query. Same on the תקנות/חוק family, where the index is a second
+    # surface at 22-29 behind /blog/construction-fencing-law at 7.9-9.6. The 2026-08-04
+    # justification above also rested on "גידור אתרי בנייה", which query-routing has since
+    # quarantined as a 98.1%-desktop sweep. So: name the archive, list what it indexes,
+    # and claim neither מחיר nor תקן - both belong to articles Google already ranks.
+    page = page.replace("{meta_title}", "מדריכים ומאמרים על גידור אתרי בנייה | מרדכי גידור")
+    page = page.replace("{meta_description}", "כל המדריכים של מרדכי גידור על גידור אתרי בנייה במקום אחד: סוגי גדרות, שילוט לאתר, שערים ומעברים, הגנת עצים ומיתוג על הגדר. 050-757-5570")
+    page = page.replace("{meta_keywords}", "מדריכי גידור, בלוג גידור אתרי בנייה, מאמרים על גידור אתרי בנייה, גדר איסכורית")
     page = page.replace("{canonical}", f"{SITE}/blog/")
     page = page.replace("{og_image}", OG_IMAGE_DEFAULT)
     page = page.replace("{hero_preload}", "")
